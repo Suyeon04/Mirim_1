@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/menu_bar.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu_bar</title>
+    <script type="text/javascript">
+        var nav = document.getElementsByClassName("navigation");
+    
+        window.onscroll = function sticky() {
+          if(window.pageYOffset > nav[0].offsetTop) {
+            nav[0].classList.add("nav");
+          } else {
+            nav[0].classList.remove("nav");
+          }
+        }
+        $(function(){
+          $("iframe.myFrame").load(function(){ //iframe 컨텐츠가 로드 된 후에 호출됩니다.
+            var frame = $(this).get(0);
+            var doc = (frame.contentDocument) ? frame.contentDocument : frame.contentWindow.document;
+            $(this).height(doc.body.scrollHeight);
+            $(this).width(doc.body.scrollWidth);
+          });
+        });
+      </script>
+</head>
+<body>
+    <div class="header">
+        <div class="navigation">
+          <a>미림식당</a>
+          <a href="#">HOME</a>
+          <a href="#">한식</a>
+          <a href="#">일식</a>
+          <a href="#">중식</a>
+          <a href="#">디저트</a>
+        </div>
+    </div>
+      <iframe src="file:///C:/mirimProject2/mainpage.html" aling frameborder="0" scrolling="no"></iframe>
+      <p>
+        ddd
+      </p>
+</body>
+</html>

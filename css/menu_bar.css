@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat";
+  }
+  .header{
+    width: 100%;
+    height: 600px;
+    background: url('../img/test.jpg') no-repeat 50%;
+    background-size: cover;
+  }
+  .navigation{
+    width: 100%;
+    padding: 18px 0;
+    text-align: right;
+  }
+  .navigation a{
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 0 18PX;
+    text-decoration: NONE;
+    color: #333;
+    font-weight: 500;
+    text-shadow: 0 0 20px #000000;
+    transition: 0.3s;
+  }
+  .navigation h1 {
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 0 18PX;
+    text-decoration: NONE;
+    color: #fff;
+    font-weight: 500;
+    text-shadow: 0 0 20px #000000;
+    transition: 0.3s;
+  }
+  .navigation a:hover{
+    color: #333;
+  }
+  .nav{
+    position: fixed;
+    background: #0ff;
+  }
+  p{
+    font-size: 18px;
+    padding: 0 40px;
+    text-align: justify;
+    line-height: 200%;
+  }
+  iframe [name = iframe]{
+    margin: 0;
+    padding: 0;  
+    width: 100%; 
+    height: 100%;
+    position: absolute; 
+    top: 0; 
+    left: 0;
+  }
